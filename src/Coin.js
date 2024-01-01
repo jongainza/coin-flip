@@ -13,7 +13,7 @@ const Coin = () => {
   };
   return (
     <div>
-      <Side />
+      {counter === 0 ? null : <Side />}
       {counter === 0 ? null : <p>Number of times flipped {counter}</p>}
       <button onClick={handleFlip}>Flip It!</button>
       <button onClick={handleReset}>Reset</button>
